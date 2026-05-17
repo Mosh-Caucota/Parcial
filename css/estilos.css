@@ -1,11 +1,6 @@
-/* fondo de pagina y configuracion */
-* {
-    box-shadow: none;
-    box-sizing: border-box;
-}
-
+/* fondo de pagina y configuracion - */
 body {
-    font-size: 100%; 
+    font-size: 16px; /
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -16,57 +11,56 @@ body {
     color: #111111;
 }
 
-/* bloque contenedor de la pagina */
+/* bloque contenedor  */
 .contenedor-principal {
     max-width: 900px; 
     width: 95%; 
-    margin: 2rem auto;
-    background-color: #ffffff; /* blanco pleno sin transparencias complejas */
-    padding: 35px; /* cambiado a px fijos para restar prolijidad */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    margin: 30px auto; 
+    background-color: #ffffff; 
+    padding: 25px; 
+    box-shadow: 5px 5px 15px #888888; 
 }
 
-/* estilos de los titulos */
-h1, h2, h3 {
-    font-family: 'Abel', sans-serif;
-    font-weight: normal; 
-    color: #050505;
-    margin-top: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
+/* estilos de los titulos - Separados  */
 h1 {
-    font-size: 3rem;
+    font-family: 'Abel', sans-serif; /* Tipografía obligatoria */
+    font-size: 3.2rem;
     text-align: center;
-    border-bottom: 2px solid #222222;
-    padding-bottom: 15px; /* uso de px */
-    margin-bottom: 0;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 h2 {
+    font-family: 'Abel', sans-serif;
     font-size: 1.8rem;
-    margin-top: 30px; /* uso de px */
+    margin-top: 35px;
+    margin-bottom: 15px;
     color: #222222;
-    border-left: 4px solid #000000;
-    padding-left: 10px; /* uso de px */
+    text-transform: uppercase;
+    
+}
+
+h3 {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.4rem;
+    color: #333333;
 }
 
 p {
-    font-size: 1rem; 
-    margin-bottom: 1.2rem;
-    text-align: justify;
+    font-size: 1.1rem; 
+    margin-bottom: 15px;
+    text-align: justify; /* descubrí el justify */
 }
 
-/* menu de navegacion horizontal */
+/* menu de navegacion */
 .menu-horizontal {
     list-style: none;
     padding: 0;
-    margin: 15px 0 30px 0; /* modificado con px */
+    margin: 20px 0px;
     text-align: center;
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc; 
 }
 
 .menu-horizontal li {
@@ -75,187 +69,191 @@ p {
 
 .enlace-nav {
     display: block;
-    padding: 12px 25px; /* uso de px en los botones */
-    color: #555555;
+    padding: 10px 20px; 
+    color: blue; 
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    /* se quito la transicion para que el hover sea mas directo y rústico */
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-/* estados de los links */
+/* links */
+.enlace-nav:link {
+    color: #333333;
+}
+
+.enlace-nav:visited {
+    color: #555555;
+}
+
 .enlace-nav:hover {
-    color: #000000;
-    background-color: #eeeeee;
+    color: #ffffff;
+    background-color: #000000;  
 }
 
 .enlace-nav:active {
-    background-color: #dddddd;
+    background-color: #555555;
 }
 
+/* Enlaces */
 .enlace-nav.activo {
     color: #000000;
-    font-weight: bold;
-    border-bottom: 3px solid #000000;
-    background-color: #eaeaea;
+    background-color: #cccccc;
+    text-decoration: underline;
 }
 
-/* diseño de los bloques de contenido */
+
 .seccion-hero {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
 .texto-destacado {
     font-family: 'Abel', sans-serif;
-    font-size: 1.6rem;
-    background-color: #f0f0f0;
-    border-left: 6px solid #000000;
-    margin: 2rem 0;
-    padding: 20px; /* cambiado a px */
-    color: #111111;
+    font-size: 1.5rem;
+    background-color: #e9e9e9;
+    margin: 25px 0px;
+    padding: 15px; 
+    color: #000000;
+    text-align: center; 
+    /* Centrado */
 }
 
 .texto-destacado .autor {
     display: block;
     font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
-    text-align: right;
-    font-weight: 600;
-    margin-top: 10px; /* cambiado a px */
-    color: #555555;
+    font-size: 0.9rem;
+    font-style: italic; 
+    margin-top: 5px;
 }
 
+/* Bloques de imagen y texto  */
 .bloque-perfil {
-    display: block;
-    margin-bottom: 1.5rem;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .columna-texto {
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .columna-imagen {
     width: 100%;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
-/* imagenes generales */
+/* imagenes generales con borde simple */
 .imagen-artista {
-    max-width: 100%;
+    max-width: 90%; 
     height: auto;
-    border: 1px solid #cccccc;
-    padding: 6px; /* cambiado a px */
-    background-color: #ffffff;
+    border: 3px solid #333333; 
+    padding: 5px;
 }
 
-/* galeria en la pagina de obras */
+/* galeria en la pagina */
 .galeria-imagenes {
-    margin: 2rem 0;
+    margin: 30px 0px;
     text-align: center;
 }
 
 .galeria-imagenes .imagen-artista {
-    width: 48%;
+    width: 45%; 
     display: inline-block;
-    margin: 1%;
-    vertical-align: top;
+    margin: 2%; 
 }
 
 /* listas en paralelo */
 .contenedor-listas {
-    margin: 2rem 0;
-}
+    margin: 25px 0px;
+    text-align: center;
 
+
+    /* Texto y margen dentro de la caja */
 .caja-lista {
-    width: 48%;
+    width: 45%; 
     display: inline-block;
     vertical-align: top;
-    background-color: #fcfcfc;
-    padding: 20px; /* cambiado a px */
-    border: 1px solid #eeeeee;
-}
-
-.caja-lista:last-child {
-    margin-left: 3%;
+    background-color: #f9f9f9;
+    padding: 15px; 
+    border: 1px solid #cccccc;
+    text-align: left; 
+    margin: 1%; 
 }
 
 .lista-ul, .lista-ol {
-    padding-left: 1.5rem;
+    padding-left: 20px;
     font-size: 1rem;
 }
 
 .lista-ul li, .lista-ol li {
-    margin-bottom: 10px; /* cambiado a px */
+    margin-bottom: 8px; 
 }
 
 .resaltado {
-    font-weight: 600;
-    background-color: #e6e6e6;
-    padding: 2px 5px; /* cambiado a px */
+    font-weight: bold;
+    background-color: yellow;
 }
 
 .bloque-tecnologia {
-    background-color: #f7f7f7;
-    padding: 20px; /* cambiado a px */
-    margin-top: 2rem;
-    border-top: 1px dashed #cccccc;
+    background-color: #eaeaea;
+    padding: 15px; 
+    margin-top: 30px;
+    border: 1px solid #999999;
 }
 
-/* contenedor para el video */
+/* seccion video */
 .seccion-video {
-    margin: 2rem 0;
+    margin: 35px 0px;
+    text-align: center;
 }
+
 
 .reproductor-responsivo {
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-    margin-top: 15px; /* cambiado a px */
-    border: 1px solid #000000;
+    margin-top: 15px; 
 }
 
+
+ /* Ancho estándar de YouTube */
+/* Alto fijo en px */
 .reproductor-responsivo iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    max-width: 560px; 
+    height: 315px; 
 }
 
 /* seccion de contacto y footer */
 .caja-contacto {
-    margin-top: 40px; /* cambiado a px */
-    background-color: #111111;
+    margin-top: 35px; 
+    background-color: #333333; 
     color: #ffffff;
-    padding: 30px; /* cambiado a px */
+    padding: 25px; 
     text-align: center;
 }
 
+/* estilos para el contacto */
 .caja-contacto h2 {
     color: #ffffff;
-    border: none;
-    margin-bottom: 10px; /* cambiado a px */
+    margin-bottom: 10px; 
 }
 
+
+/* Estilos para el enlace de correo electrónico */
 .link-correo {
-    color: #bbbbbb;
-    text-decoration: none;
-    font-weight: 600;
+    color: #ffcc00; 
+    text-decoration: underline;
 }
 
 .link-correo:hover {
     color: #ffffff;
-    text-decoration: underline;
 }
 
+
+/* Estilos para el footer */
 footer {
-    margin-top: 40px; /* cambiado a px */
-    border-top: 1px solid #dddddd;
-    padding-top: 20px; /* cambiado a px */
+    margin-top: 40px; 
+    border-top: 2px dashed #999999; 
+    padding-top: 15px; 
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #666666;
 }
