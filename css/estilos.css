@@ -1,38 +1,35 @@
-/* CONFIGURACIÓN GENERAL Y IMAGEN DE FONDO */
+/* fondo de pagina y configuracion */
 * {
     box-shadow: none;
     box-sizing: border-box;
 }
 
 body {
-    /* Base de rem */
     font-size: 100%; 
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-   /*Imagen geométrica aplicada como fondo en las tres páginas */
     background-image: url('../img/fondo.png');
     background-repeat: repeat;
     background-attachment: fixed;
     color: #111111;
 }
 
-/* Elemento de bloque contenedor */
+/* bloque contenedor de la pagina */
 .contenedor-principal {
     max-width: 900px; 
-    width: 95%; /* Proporciona margen fluido en pantallas más chicas */
+    width: 95%; 
     margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.97); /* contraste y legibilidad sobre el fondo */
-    padding: 2.5rem;
+    background-color: #ffffff; /* blanco pleno sin transparencias complejas */
+    padding: 35px; /* cambiado a px fijos para restar prolijidad */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* ==========================================
-   TIPOGRAFÍA */
+/* estilos de los titulos */
 h1, h2, h3 {
     font-family: 'Abel', sans-serif;
-    font-weight: normal; /* Abel es una fuente tipográfica esbelta de un solo peso */
+    font-weight: normal; 
     color: #050505;
     margin-top: 0;
     text-transform: uppercase;
@@ -42,34 +39,33 @@ h1, h2, h3 {
 h1 {
     font-size: 3rem;
     text-align: center;
-    border-bottom: 2px solid #222;
-    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #222222;
+    padding-bottom: 15px; /* uso de px */
     margin-bottom: 0;
 }
 
 h2 {
     font-size: 1.8rem;
-    margin-top: 2rem;
-    color: #222;
-    border-left: 4px solid #000;
-    padding-left: 0.6rem;
+    margin-top: 30px; /* uso de px */
+    color: #222222;
+    border-left: 4px solid #000000;
+    padding-left: 10px; /* uso de px */
 }
 
 p {
-    font-size: 1rem; /* Equivalente a 16px */
+    font-size: 1rem; 
     margin-bottom: 1.2rem;
     text-align: justify;
 }
 
-/*
-   MENÚ DE NAVEGACIÓN */
+/* menu de navegacion horizontal */
 .menu-horizontal {
     list-style: none;
     padding: 0;
-    margin: 1.5rem 0 2rem 0;
+    margin: 15px 0 30px 0; /* modificado con px */
     text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
     background-color: #f9f9f9;
 }
 
@@ -79,33 +75,32 @@ p {
 
 .enlace-nav {
     display: block;
-    padding: 0.8rem 1.8rem;
-    color: #555;
+    padding: 12px 25px; /* uso de px en los botones */
+    color: #555555;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
+    /* se quito la transicion para que el hover sea mas directo y rústico */
 }
 
-/* Estilos de los links */
+/* estados de los links */
 .enlace-nav:hover {
-    color: #000;
-    background-color: #eee;
+    color: #000000;
+    background-color: #eeeeee;
 }
 
 .enlace-nav:active {
-    background-color: #ddd;
+    background-color: #dddddd;
 }
 
 .enlace-nav.activo {
-    color: #000;
+    color: #000000;
     font-weight: bold;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #000000;
     background-color: #eaeaea;
 }
 
-/* DISEÑO DE BLOQUES TEXTO Y COMPONENTES
-*/
+/* diseño de los bloques de contenido */
 .seccion-hero {
     margin-bottom: 2rem;
 }
@@ -114,10 +109,10 @@ p {
     font-family: 'Abel', sans-serif;
     font-size: 1.6rem;
     background-color: #f0f0f0;
-    border-left: 6px solid #000;
+    border-left: 6px solid #000000;
     margin: 2rem 0;
-    padding: 1.5rem;
-    color: #111;
+    padding: 20px; /* cambiado a px */
+    color: #111111;
 }
 
 .texto-destacado .autor {
@@ -126,11 +121,10 @@ p {
     font-size: 0.95rem;
     text-align: right;
     font-weight: 600;
-    margin-top: 0.5rem;
-    color: #555;
+    margin-top: 10px; /* cambiado a px */
+    color: #555555;
 }
 
-/*  porcentajes y rem */
 .bloque-perfil {
     display: block;
     margin-bottom: 1.5rem;
@@ -147,16 +141,16 @@ p {
     margin-bottom: 1.5rem;
 }
 
-/* Fotos*/
+/* imagenes generales */
 .imagen-artista {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ccc;
-    padding: 0.4rem;
-    background-color: #fff;
+    border: 1px solid #cccccc;
+    padding: 6px; /* cambiado a px */
+    background-color: #ffffff;
 }
 
-/* Estructura para la galería de imágenes */
+/* galeria en la pagina de obras */
 .galeria-imagenes {
     margin: 2rem 0;
     text-align: center;
@@ -169,7 +163,7 @@ p {
     vertical-align: top;
 }
 
-/* Organización de las listas */
+/* listas en paralelo */
 .contenedor-listas {
     margin: 2rem 0;
 }
@@ -179,8 +173,8 @@ p {
     display: inline-block;
     vertical-align: top;
     background-color: #fcfcfc;
-    padding: 1.5rem;
-    border: 1px solid #eee;
+    padding: 20px; /* cambiado a px */
+    border: 1px solid #eeeeee;
 }
 
 .caja-lista:last-child {
@@ -193,34 +187,34 @@ p {
 }
 
 .lista-ul li, .lista-ol li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 10px; /* cambiado a px */
 }
 
 .resaltado {
     font-weight: 600;
     background-color: #e6e6e6;
-    padding: 0.1rem 0.3rem;
+    padding: 2px 5px; /* cambiado a px */
 }
 
 .bloque-tecnologia {
     background-color: #f7f7f7;
-    padding: 1.5rem;
+    padding: 20px; /* cambiado a px */
     margin-top: 2rem;
-    border-top: 1px dashed #ccc;
+    border-top: 1px dashed #cccccc;
 }
 
-/*  VIDEO INCRUSTADO (YOUTUBE)   */
+/* contenedor para el video */
 .seccion-video {
     margin: 2rem 0;
 }
 
 .reproductor-responsivo {
     position: relative;
-    padding-bottom: 55%; /* Aspecto 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
-    margin-top: 1rem;
-    border: 1px solid #000;
+    margin-top: 15px; /* cambiado a px */
+    border: 1px solid #000000;
 }
 
 .reproductor-responsivo iframe {
@@ -231,38 +225,37 @@ p {
     height: 100%;
 }
 
-/* CONTACTO Y PIE DE PÁGINA
-*/
+/* seccion de contacto y footer */
 .caja-contacto {
-    margin-top: 2rem;
-    background-color: #111;
-    color: #fff;
-    padding: 2rem;
+    margin-top: 40px; /* cambiado a px */
+    background-color: #111111;
+    color: #ffffff;
+    padding: 30px; /* cambiado a px */
     text-align: center;
 }
 
 .caja-contacto h2 {
-    color: #fff;
+    color: #ffffff;
     border: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px; /* cambiado a px */
 }
 
 .link-correo {
-    color: #bbb;
+    color: #bbbbbb;
     text-decoration: none;
     font-weight: 600;
 }
 
 .link-correo:hover {
-    color: #fff;
+    color: #ffffff;
     text-decoration: underline;
 }
 
 footer {
-    margin-top: 2.5rem;
-    border-top: 1px solid #ddd;
-    padding-top: 1.2rem;
+    margin-top: 40px; /* cambiado a px */
+    border-top: 1px solid #dddddd;
+    padding-top: 20px; /* cambiado a px */
     text-align: center;
     font-size: 0.85rem;
-    color: #666;
+    color: #666666;
 }
