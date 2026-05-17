@@ -1,0 +1,268 @@
+/* CONFIGURACIÓN GENERAL Y IMAGEN DE FONDO */
+* {
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+body {
+    /* Base de rem */
+    font-size: 100%; 
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+   /*Imagen geométrica aplicada como fondo en las tres páginas */
+    background-image: url('../img/fondo.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #111111;
+}
+
+/* Elemento de bloque contenedor */
+.contenedor-principal {
+    max-width: 900px; 
+    width: 95%; /* Proporciona margen fluido en pantallas más chicas */
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.97); /* contraste y legibilidad sobre el fondo */
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================
+   TIPOGRAFÍA */
+h1, h2, h3 {
+    font-family: 'Abel', sans-serif;
+    font-weight: normal; /* Abel es una fuente tipográfica esbelta de un solo peso */
+    color: #050505;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 2px solid #222;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #222;
+    border-left: 4px solid #000;
+    padding-left: 0.6rem;
+}
+
+p {
+    font-size: 1rem; /* Equivalente a 16px */
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+/*
+   MENÚ DE NAVEGACIÓN */
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.menu-horizontal li {
+    display: inline-block;
+}
+
+.enlace-nav {
+    display: block;
+    padding: 0.8rem 1.8rem;
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+/* Estilos de los links */
+.enlace-nav:hover {
+    color: #000;
+    background-color: #eee;
+}
+
+.enlace-nav:active {
+    background-color: #ddd;
+}
+
+.enlace-nav.activo {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid #000;
+    background-color: #eaeaea;
+}
+
+/* DISEÑO DE BLOQUES TEXTO Y COMPONENTES
+*/
+.seccion-hero {
+    margin-bottom: 2rem;
+}
+
+.texto-destacado {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.6rem;
+    background-color: #f0f0f0;
+    border-left: 6px solid #000;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    color: #111;
+}
+
+.texto-destacado .autor {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    text-align: right;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/*  porcentajes y rem */
+.bloque-perfil {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.columna-texto {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.columna-imagen {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Fotos*/
+.imagen-artista {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 0.4rem;
+    background-color: #fff;
+}
+
+/* Estructura para la galería de imágenes */
+.galeria-imagenes {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.galeria-imagenes .imagen-artista {
+    width: 48%;
+    display: inline-block;
+    margin: 1%;
+    vertical-align: top;
+}
+
+/* Organización de las listas */
+.contenedor-listas {
+    margin: 2rem 0;
+}
+
+.caja-lista {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fcfcfc;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+}
+
+.caja-lista:last-child {
+    margin-left: 3%;
+}
+
+.lista-ul, .lista-ol {
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.lista-ul li, .lista-ol li {
+    margin-bottom: 0.6rem;
+}
+
+.resaltado {
+    font-weight: 600;
+    background-color: #e6e6e6;
+    padding: 0.1rem 0.3rem;
+}
+
+.bloque-tecnologia {
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 1px dashed #ccc;
+}
+
+/*  VIDEO INCRUSTADO (YOUTUBE)   */
+.seccion-video {
+    margin: 2rem 0;
+}
+
+.reproductor-responsivo {
+    position: relative;
+    padding-bottom: 55%; /* Aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 1rem;
+    border: 1px solid #000;
+}
+
+.reproductor-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTACTO Y PIE DE PÁGINA
+*/
+.caja-contacto {
+    margin-top: 2rem;
+    background-color: #111;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.caja-contacto h2 {
+    color: #fff;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+.link-correo {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-correo:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 2.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1.2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+}
