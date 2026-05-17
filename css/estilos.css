@@ -1,6 +1,6 @@
 /* fondo de pagina y configuracion - */
 body {
-    font-size: 16px; /
+    font-size: 16px; 
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -142,7 +142,9 @@ p {
     margin-bottom: 15px;
 }
 
+
 /* imagenes generales con borde simple */
+
 .imagen-artista {
     max-width: 90%; 
     height: auto;
@@ -167,7 +169,7 @@ p {
     margin: 25px 0px;
     text-align: center;
 
-
+}
     /* Texto y margen dentro de la caja */
 .caja-lista {
     width: 45%; 
@@ -213,7 +215,7 @@ p {
 }
 
 
- /* Ancho de YouTube */
+ /* Ancho estándar de YouTube */
 /* Alto fijo en px */
 .reproductor-responsivo iframe {
     width: 100%; 
